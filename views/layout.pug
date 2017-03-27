@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title= title
+        
+        meta(name='description' content='')
+        meta(name='author' content='SysDevs')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+        link(rel='stylesheet' href='css/bulma.css')
+        link(rel='stylesheet' href='css/styles.css')
+    body
+        nav.nav.has-shadow
+            div.nav-left
+                a(href='/').nav-item
+                    img(src='images/moose.png')
+                a(href='/').nav-item.is-tab Home
+                a(href='/gallery').nav-item.is-tab Gallery
+                a(href='/list').nav-item.is-tab List
+        
+        block content
+
+        footer.footer
+            div.container
+                div.content.has-text-centered
+                    p Copyright © 2017 SysDevs

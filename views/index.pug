@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    section.hero.is-success.has-text-centered#navbar
+        div.hero-body
+            div.container
+                h1 Welcome to Captain Moose
+    div.columns
+        div.column#moose-tools
+        div.column.is-two-thirds#moose-canvas
+        div.column#moose-palette
+    script(src='/scripts/painter.js' async)
