@@ -1,12 +1,15 @@
 extends layout
 
 block content
-    section.hero.is-success.has-text-centered#navbar
-        div.hero-body
-            div.container
-                h1 Welcome to Captain Moose
-    div.columns
+  section.hero.is-primary
+    div.hero-body
+      div.container
+        h1.title Welcome to Captain Moose
+        h2.subtitle Create a Moose today
+  section.section
+    div.container
+      div.moose-wrap
+        div.column#moose-canvas
         div.column#moose-tools
-        div.column.is-two-thirds#moose-canvas
-        div.column#moose-palette
-    script(src='/scripts/painter.js' async)
+        div.column.is-center#moose-palette
+  script(src='/scripts/painter.js' async)
